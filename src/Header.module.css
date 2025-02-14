@@ -1,0 +1,125 @@
+.header {
+    height: 105vh;
+    background-color: rgba(7, 51, 64, 1);
+    width: 100%;
+    padding-left: 45px;
+    overflow: hidden;
+    margin: 0 0 40px 0;
+}
+
+.headerContent {
+    display: flex;
+    gap: 20px;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin: auto -155px auto 0;
+}
+
+.logo {
+    aspect-ratio: 1.71;
+    object-fit: contain;
+    object-position: center;
+    width: 503px;
+    max-width: 100%;
+}
+
+.companyInfo {
+    display: flex;
+    margin-top: 94px;
+    width: 100%;
+    padding-left: 5px;
+    flex-direction: column;
+}
+
+.companyName {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* gap: 22px; */
+}
+
+.companyType {
+    color: rgba(201, 191, 186, 1);
+    letter-spacing: 0.72px;
+    align-self: start;
+    font: 400 24px Noto Sans, sans-serif;
+}
+
+.companyBrand {
+    color: rgba(201, 191, 186, 1);
+    margin-top: 13px;
+    font: 500 84px/84px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.companySlogan {
+    background-color: rgba(96, 127, 150, 1);
+    align-self: start;
+    margin-top: 76px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.72px;
+    padding: 27px 45px;
+    font: 400 24px Forum, sans-serif;
+}
+
+.headerImages {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 768px;
+    flex-grow: 1;
+    padding: 0 4px 80px;
+}
+
+.headerImage {
+    height: 160%;
+    top: -285px;
+    right: 50px;
+    position: absolute;
+    z-index: 4;
+    object-fit: cover;
+}
+
+@media (max-width: 991px) {
+    .header {
+        max-width: 100%;
+        padding-left: 20px;
+    }
+
+    .headerContent {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+    }
+
+    .logoContainer {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .companyInfo {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .companyName {
+        max-width: 100%;
+    }
+
+    .companyBrand {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .companySlogan {
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+    .headerImages {
+        max-width: 100%;
+    }
+}

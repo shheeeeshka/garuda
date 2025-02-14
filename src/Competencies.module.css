@@ -1,0 +1,136 @@
+.competencies {
+    background-color: rgba(7, 51, 64, 1);
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 0 48px 0 5px;
+    margin: 40px 0;
+}
+
+.decorativeImage {
+    aspect-ratio: 9.71;
+    object-fit: contain;
+    object-position: center;
+    width: 611px;
+    margin-left: 36px;
+    max-width: 100%;
+}
+
+.competenciesContent {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+    align-items: center;
+    z-index: 10;
+    margin-top: -6px;
+    width: 100%;
+    gap: 80px;
+}
+
+.competenciesTitle {
+    color: rgba(201, 191, 186, 1);
+    font: 400 56px/56px Forum, -apple-system, Roboto, Helvetica, sans-serif;
+    align-self: center;
+}
+
+.competenciesIllustration {
+    aspect-ratio: 1.57;
+    object-fit: contain;
+    object-position: center;
+    height: 400px;
+    margin-top: 113px;
+}
+
+.competenciesList {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: fit-content;
+    margin: auto 0;
+}
+
+.separator {
+    width: 5px;
+    height: 100%;
+    background: #5c7687;
+}
+
+.competencyItem {
+    display: flex;
+    width: 688px;
+    align-items: start;
+    gap: 20px;
+    margin-top: 53px;
+}
+
+.competencyIcon {
+    aspect-ratio: 1.04;
+    object-fit: contain;
+    object-position: center;
+    width: 77px;
+}
+
+.competencyInfo {
+    display: flex;
+    /* width: 100px; */
+    
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: fit-content;
+}
+
+.competencyTitle {
+    color: rgba(201, 191, 186, 1);
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0.72px;
+    align-self: start;
+}
+
+.competencySeparator {
+    background-color: rgba(96, 127, 150, 1);
+    width: 247px;
+    height: 2px;
+    margin-top: 6px;
+}
+
+.competencyDescription {
+    color: rgba(255, 255, 255, 1);
+    font-size: 21px;
+    line-height: 35px;
+    letter-spacing: 0.54px;
+    margin-top: 23px;
+}
+
+@media (max-width: 991px) {
+    .competencies {
+        max-width: 100%;
+        padding-right: 20px;
+    }
+
+    .competenciesContent {
+        max-width: 100%;
+    }
+
+    .competenciesTitle {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .competenciesIllustration {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .competencyItem {
+        margin-top: 40px;
+    }
+}

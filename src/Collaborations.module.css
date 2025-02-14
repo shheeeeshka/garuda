@@ -1,0 +1,150 @@
+.collaborations {
+    background-color: rgba(7, 51, 64, 1);
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    font-family: Forum, sans-serif;
+    font-weight: 400;
+    padding: 0 30px;
+    position: relative;
+    margin: 40px 0;
+}
+
+.decorativeImage {
+    aspect-ratio: 9.71;
+    object-fit: contain;
+    object-position: center;
+    width: 611px;
+    margin-left: 36px;
+    max-width: 100%;
+}
+
+.collaborationsContent {
+    align-self: stretch;
+    /* z-index: 10; */
+    display: flex;
+    display: flex;
+    margin-top: -6px;
+    align-items: center;
+    gap: 20px;
+    width: 85%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.collaborationsTitle {
+    color: rgba(201, 191, 186, 1);
+    font-size: 86px;
+    font-weight: 200;
+    line-height: 96px;
+    margin: 0 45px 0 14px;
+}
+
+.collaborationsSubtitle {
+    color: rgba(255, 255, 255, 1);
+    font-size: 23px;
+    line-height: 37px;
+    letter-spacing: 0.6px;
+    margin: 49px 0 0 19px;
+}
+
+.collaborationsIllustration {
+    aspect-ratio: 1.56;
+    object-fit: contain;
+    object-position: center;
+    height: 368px;
+    margin-top: 89px;
+}
+
+.collaborationsList {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.collaborationItem {
+    display: flex;
+    gap: 12px;
+    margin-top: 63px;
+    width: 620px;
+}
+
+.collaborationIcon {
+    aspect-ratio: 1.02;
+    object-fit: contain;
+    object-position: center;
+    width: 41px;
+    align-self: start;
+}
+
+.collaborationInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-grow: 1;
+    gap: 5px;
+    flex-basis: 0;
+    width: fit-content;
+}
+
+.collaborationTitle {
+    color: rgba(201, 191, 186, 1);
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+}
+
+.collaborationSeparator {
+    background-color: rgba(96, 127, 150, 1);
+    width: 247px;
+    height: 2px;
+    margin-top: 6px;
+}
+
+.collaborationDescription {
+    color: rgba(255, 255, 255, 1);
+    font-size: 19px;
+    line-height: 28px;
+    letter-spacing: 0.58px;
+    align-self: stretch;
+    margin-top: 4px;
+}
+
+@media (max-width: 991px) {
+    .collaborations {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .collaborationsContent {
+        max-width: 100%;
+    }
+
+    .collaborationsTitle {
+        max-width: 100%;
+        margin-right: 10px;
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .collaborationsSubtitle {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .collaborationsIllustration {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .collaborationItem {
+        margin-top: 40px;
+    }
+}

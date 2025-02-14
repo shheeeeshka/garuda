@@ -1,0 +1,87 @@
+.contact {
+    height: 100vh;
+    background-color: rgba(7, 51, 64, 1);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 91px 44px 59px;
+}
+
+.contactTitle {
+    color: rgba(201, 191, 186, 1);
+    text-transform: uppercase;
+    align-self: start;
+    font: 400 56px/56px Forum, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.contactContent {
+    display: flex;
+    margin-top: 51px;
+    gap: 20px;
+}
+
+.contactInfo {
+    flex: 1;
+}
+
+.contactInfoTitle {
+    color: rgba(201, 191, 186, 1);
+    font-size: 30px;
+    letter-spacing: 0.9px;
+    font-family: Forum, sans-serif;
+    font-weight: 400;
+}
+
+.contactDetails {
+    display: flex;
+    margin-top: 28px;
+    gap: 13px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.72px;
+}
+
+.contactIcon {
+    aspect-ratio: 0.2;
+    object-fit: contain;
+    object-position: center;
+    width: 29px;
+}
+
+.contactText {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.contactIllustration {
+    aspect-ratio: 2.19;
+    object-fit: contain;
+    object-position: center;
+    height: 70%;
+    margin-top: 5px;
+    flex-grow: 1;
+}
+
+@media (max-width: 991px) {
+    .contact {
+        max-width: 100%;
+        padding: 40px 20px;
+    }
+
+    .contactTitle {
+        max-width: 100%;
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .contactContent {
+        flex-direction: column;
+    }
+
+    .contactIllustration {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+}

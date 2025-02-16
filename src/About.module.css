@@ -16,22 +16,23 @@
 .logo {
     position: absolute;
     top: -90px;
-    right: -120px;
+    right: -70px;
     height: 250px;
 }
 
 .aboutBlock {
-   display: flex;
-   flex-direction: column; 
-   color: rgba(201, 191, 186, 1);
-   height: 80vh;
-   padding-left: 60px;
-   justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    color: rgba(201, 191, 186, 1);
+    height: 80vh;
+    /* padding-left: 60px; */
+    justify-content: space-between;
 }
 
 .aboutTitle {
     color: rgba(201, 191, 186, 1);
     font-size: 85px;
+    font-weight: 200;
     margin-top: -60px;
     /* font: 400 56px/1 Forum, sans-serif; */
 }
@@ -42,8 +43,8 @@
     position: relative;
     min-height: 570px;
     flex-grow: 1;
-    align-items: start;
     color: rgba(255, 255, 255, 1);
+    align-items: start;
     letter-spacing: 0.54px;
     padding: 170px 80px 56px 0;
     font: 400 18px/22px Forum, -apple-system, Roboto, Helvetica, sans-serif;
@@ -53,7 +54,7 @@
     position: absolute;
     inset: 0;
     top: 57%;
-    transform: translate(30%, 66%);
+    transform: translate(20%, 66%);
     height: 92%;
     object-fit: cover;
     object-position: center;
@@ -85,10 +86,10 @@
         gap: 0px;
     }
 
-    .aboutTitle {
+    /* .aboutTitle {
         margin-top: 40px;
         font-size: 40px;
-    }
+    } */
 
     .aboutDescription {
         max-width: 100%;
@@ -98,5 +99,88 @@
 
     .aboutText {
         margin-top: 40px;
+    }
+}
+
+@media (max-width: 1660px) {
+    .aboutDescription {
+        display: none;
+    }
+
+    .aboutBackground {
+     height: 80%;   
+     transform: translate(20%, 82%);
+    }
+}
+
+@media (max-width: 1480px) {
+    .aboutBackground {
+        top: 76%;
+        transform: translate(32%, 81%);
+        height: 66%;
+    }
+}
+
+@media (max-width: 680px) {
+    .aboutBackground {
+        height: 124% !important;
+        top: 276% !important;
+    }
+
+    .about {
+        height: auto!important;
+        min-height: 114vh!important;
+    }
+
+    .aboutTitle {
+        font-size: 40px;
+        margin-bottom: 30px!important;
+    }
+
+    .aboutBlock {
+        height: 30vh!important;
+    }
+
+    .aboutBlock>p {
+        font-size: 18px!important;
+        padding: 0 22px!important;
+        width: 100%!important;
+    }
+}
+
+
+@media (max-width: 1520px) {
+    .aboutBackground {
+
+    }
+}
+
+
+@media (max-width: 1350px) {
+    .aboutBackground {
+        /* position: initial; */
+        top: 160%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        z-index: 2;
+    }
+
+    .aboutBlock {
+        align-items: center;
+        position: relative;
+        height: 66vh;
+    }
+
+    .aboutContent {
+        justify-content: center;
+    }
+
+    .aboutTitle {
+        margin: 0;
+    }
+
+    .about {
+        height: 160vh;
     }
 }

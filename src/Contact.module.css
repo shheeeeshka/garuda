@@ -3,9 +3,11 @@
     background-color: rgba(7, 51, 64, 1);
     display: flex;
     width: 100%;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    padding: 91px 44px 59px;
+    padding: 91px 164px 0px;
 }
 
 .contactTitle {
@@ -18,11 +20,12 @@
 .contactContent {
     display: flex;
     margin-top: 51px;
-    gap: 20px;
+    gap: 250px;
 }
 
 .contactInfo {
     flex: 1;
+    width: 460px;
 }
 
 .contactInfoTitle {
@@ -35,8 +38,9 @@
 
 .contactDetails {
     display: flex;
+    align-items: center;
     margin-top: 28px;
-    gap: 13px;
+    gap: 25px;
     font-size: 24px;
     color: rgba(255, 255, 255, 1);
     letter-spacing: 0.72px;
@@ -52,7 +56,7 @@
 .contactText {
     display: flex;
     flex-direction: column;
-    gap: 34px;
+    gap: 40px;
 }
 
 .contactIllustration {
@@ -62,6 +66,13 @@
     height: 70%;
     margin-top: 5px;
     flex-grow: 1;
+}
+
+@media (max-width: 1490px) {
+    .contactContent {
+        margin-top: 110px;
+        gap: 65px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -78,10 +89,24 @@
 
     .contactContent {
         flex-direction: column;
+        align-items: center;
     }
 
     .contactIllustration {
-        max-width: 100%;
+        max-width: 90%;
         margin-top: 40px;
+    }
+
+    .contactText {
+        gap: 30px;
+    }
+
+    .contactInfo {
+        width: auto;
+    }
+
+    .contactTitle {
+        font-size: 35px;
+        line-height: 38px;
     }
 }

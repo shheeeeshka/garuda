@@ -23,8 +23,9 @@
     aspect-ratio: 1.71;
     object-fit: contain;
     object-position: center;
-    width: 503px;
-    max-width: 100%;
+    /* width: 703px; */
+    margin-left: -80px;
+    max-width: 703px;
 }
 
 .companyInfo {
@@ -46,13 +47,13 @@
     color: rgba(201, 191, 186, 1);
     letter-spacing: 0.72px;
     align-self: start;
-    font: 400 24px Noto Sans, sans-serif;
+    font: 400 28px Noto Sans, sans-serif;
 }
 
 .companyBrand {
     color: rgba(201, 191, 186, 1);
     margin-top: 13px;
-    font: 500 84px/84px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+    font: 500 124px/124px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
 }
 
 .companySlogan {
@@ -65,28 +66,75 @@
     font: 400 24px Forum, sans-serif;
 }
 
+.headerImage2 {
+    display: none;
+}
+
 .headerImages {
     display: flex;
     flex-direction: column;
     position: relative;
     min-height: 768px;
     flex-grow: 1;
+    z-index: 2;
     padding: 0 4px 80px;
 }
 
 .headerImage {
     height: 160%;
-    top: -285px;
+    top: -355px;
     right: 50px;
     position: absolute;
     z-index: 4;
     object-fit: cover;
 }
 
+@media (max-width: 700px) {
+    .headerImage {
+        height: 125%;
+        top: -444px;
+        right: -204px;
+    }
+}
+
+@media (max-width: 400px) {
+    .headerImage {
+        height: 97%;
+        top: -444px;
+        right: -195px;
+    }
+
+    .logo {
+        margin-left: 9px;
+        margin-top: 56px;
+        max-width: 403px;
+    }
+
+    .logoContainer {
+        gap: 200px;
+    }
+
+    .companySlogan {
+        font-size: 19px;
+    }
+
+    .companyName {
+        align-items: center;
+    }
+
+    .companyType {
+        font-size: 24px;
+    }
+}
+
 @media (max-width: 991px) {
     .header {
         max-width: 100%;
         padding-left: 20px;
+    }
+
+    .imggg {
+        display: none;
     }
 
     .headerContent {
@@ -97,7 +145,8 @@
 
     .logoContainer {
         max-width: 100%;
-        margin-top: 40px;
+        margin-top: -92px;
+        align-items: center;
     }
 
     .companyInfo {
@@ -110,16 +159,46 @@
     }
 
     .companyBrand {
-        font-size: 40px;
-        line-height: 44px;
+        font-size: 58px;
+        line-height: 59px;
+        text-align: center;
     }
 
     .companySlogan {
         margin-top: 40px;
-        padding: 0 20px;
+        /* padding: 0 20px; */
     }
 
-    .headerImages {
-        max-width: 100%;
+    .headerImagez {
+        position: inherit;
+        /* max-width: 100%; */
     }
+
+    .headerImage2 {
+        display: block;
+        width: 105% !important;
+        height: auto;
+        /* Установите высоту в auto для сохранения пропорций */
+        max-width: 105%;
+        /* Установите максимальную ширину в 100% */
+        position: absolute;
+        /* Позиционируйте изображение абсолютно */
+        top: 0;
+        /* Установите верхнюю позицию в 0 */
+        left: -9px;
+        /* Установите правую позицию в 0 */
+        z-index: 2;
+        /* Убедитесь, что изображение находится выше других элементов */
+    }
+
+    .headerImage {
+        display: none;
+    }
+
+    /* .headerImage {
+        top: -450px;
+        height: 115%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } */
 }

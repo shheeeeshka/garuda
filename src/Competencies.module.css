@@ -1,14 +1,15 @@
 .competencies {
     background-color: rgba(7, 51, 64, 1);
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     display: flex;
     width: 100%;
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
     align-items: center;
-    padding: 0 48px 0 5px;
-    margin: 40px 0;
+    padding: 0 0px 0 50px;
+    margin: 0px 0;
 }
 
 .decorativeImage {
@@ -29,12 +30,13 @@
     z-index: 10;
     margin-top: -6px;
     width: 100%;
-    gap: 80px;
+    gap: 170px;
 }
 
 .competenciesTitle {
     color: rgba(201, 191, 186, 1);
-    font: 400 56px/56px Forum, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 100px;
+    /* font: 400 100px/100px Forum, -apple-system, Roboto, Helvetica, sans-serif; */
     align-self: center;
 }
 
@@ -42,8 +44,9 @@
     aspect-ratio: 1.57;
     object-fit: contain;
     object-position: center;
-    height: 400px;
-    margin-top: 113px;
+    height: 25rem;
+    /* 400px = 25rem */
+    margin-top: 7rem;
 }
 
 .competenciesList {
@@ -57,8 +60,9 @@
 }
 
 .separator {
-    width: 5px;
-    height: 100%;
+    /* width: 5px; */
+    position: relative;
+    height: 100vh;
     background: #5c7687;
 }
 
@@ -80,7 +84,7 @@
 .competencyInfo {
     display: flex;
     /* width: 100px; */
-    
+
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 0;
@@ -89,9 +93,11 @@
 
 .competencyTitle {
     color: rgba(201, 191, 186, 1);
-    font-size: 34px;
+    font-size: 2.125rem;
+    /* 34px = 2.125rem */
     line-height: 1.2;
-    letter-spacing: 0.72px;
+    letter-spacing: 0.045rem;
+    /* 0.72px = 0.045rem */
     align-self: start;
 }
 
@@ -104,33 +110,60 @@
 
 .competencyDescription {
     color: rgba(255, 255, 255, 1);
-    font-size: 21px;
-    line-height: 35px;
-    letter-spacing: 0.54px;
-    margin-top: 23px;
+    font-size: 1.3125rem;
+    /* 21px = 1.3125rem */
+    line-height: 2.1875rem;
+    /* 35px = 2.1875rem */
+    letter-spacing: 0.03375rem;
+    /* 0.54px = 0.03375rem */
+    margin-top: 1.4375rem;
+    /* 23px = 1.4375rem */
+}
+
+@media (max-width: 1700px) {
+    .separator {
+        display: none;
+    }
+}
+
+@media (max-width: 1550px) {
+    .competenciesContent {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 991px) {
     .competencies {
         max-width: 100%;
-        padding-right: 20px;
+        padding-right: 70px;
     }
 
     .competenciesContent {
         max-width: 100%;
+        gap: 50px;
+    }
+
+    .competencyDescription {
+        font-size: 14px;
     }
 
     .competenciesTitle {
-        font-size: 40px;
+        font-size: 40px!important;
         line-height: 45px;
+    }
+
+    .competencyTitle {
+        font-size: 25px;
     }
 
     .competenciesIllustration {
         max-width: 100%;
         margin-top: 40px;
+        display: none;
     }
 
     .competencyItem {
         margin-top: 40px;
+        width: 100%;
     }
 }

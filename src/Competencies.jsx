@@ -24,9 +24,11 @@ const Competencies = () => {
             <div className={styles.competenciesContent}>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <h2 className={styles.competenciesTitle}>КЛЮЧЕВЫЕ<br />КОМПЕТЕНЦИИ</h2>
-                    <img src="https://cdn.builder.io/api/v1/image/assets/ed385e0488d74a178f255ec248d0cd4a/d869c24072d168f604f29d0ba1535c4feac6c5f43be83c268834313a7e944d19?apiKey=ed385e0488d74a178f255ec248d0cd4a&" alt="Competencies illustration" className={styles.competenciesIllustration} />
+                    <img src="/img/d869c24072d168f604f29d0ba1535c4feac6c5f43be83c268834313a7e944d19.png" alt="Competencies illustration" className={styles.competenciesIllustration} />
                 </div>
-                <div className={styles["separator"]}></div>
+                <div className={styles["separator"]}>
+                    <img src="/Group-16.svg" alt="" style={{position: "absolute", top: 0, left: '50%', transform: 'translate(-50%, 24px)', height: "100%"}} />
+                </div>
                 <div className={styles.competenciesList}>
                     {competenciesData.map((competency, index) => (
                         <div key={index} className={styles.competencyItem}>

@@ -4,18 +4,18 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
-        {/* <div className={styles.headerImages}> */}
         <img
           src="/Group-15.svg"
           alt="Decorative header image "
           className={styles.headerImage}
         />
-        <img
-          src="/Group-18.svg"
-          alt="Decorative header image 2"
-          className={styles.headerImage2}
-        />
-        {/* </div> */}
+        <div className={styles.headerImagesContainer}>
+          <img
+            src="/Group-18.svg"
+            alt="Decorative header image 2"
+            className={styles.headerImage2}
+          />
+        </div>
         <div className={styles.logoContainer}>
           <img
             src="/logo/GARUDA_logo_Осн-светлый_на_тёмном.png"

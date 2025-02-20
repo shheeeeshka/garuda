@@ -27,7 +27,7 @@ const Header = () => {
             className={styles.logo}
           />
           <div className={styles.companyInfo}>
-            <div style={{ display: "flex", alignItems: "center", gap: 30 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 30, justifyContent: "center" }}>
               <img
                 src={exclImg}
                 alt=""

@@ -1,4 +1,6 @@
 import styles from "./Positioning.module.css";
+import logoImg from "/logo/GARUDA_logo_Осн-светлый_на_тёмном.png";
+import bgImg from "/78.svg";
 
 const Positioning = () => {
   return (
@@ -17,9 +19,9 @@ const Positioning = () => {
         >
           ПОЗИЦИОНИРОВАНИЕ & МИССИЯ
         </h1>
-        <img src="/78.svg" alt="" style={{ height: "", width: "100vw" }} />
+        <img src={bgImg} alt="" style={{ height: "", width: "100vw" }} />
         <img
-          src="/logo/GARUDA_logo_Осн-светлый_на_тёмном.png"
+          src={logoImg}
           alt="About background"
           className={styles.aboutBackground}
         />

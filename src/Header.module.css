@@ -19,6 +19,13 @@
     margin: auto -155px auto 0;
 }
 
+.logoContainerMob {
+    display: none;
+    flex-direction: column;
+    align-self: stretch;
+    margin: auto -155px auto 0;
+}
+
 .logo {
     aspect-ratio: 1.71;
     object-fit: contain;
@@ -32,6 +39,15 @@
     display: flex;
     margin-top: 94px;
     width: 100%;
+    padding-left: 5px;
+    flex-direction: column;
+}
+
+.companyInfoMob {
+    display: none;
+    margin-top: 94px;
+    width: 100%;
+    align-items: center;
     padding-left: 5px;
     flex-direction: column;
 }
@@ -59,9 +75,22 @@
 .companySlogan {
     background-color: rgba(96, 127, 150, 1);
     align-self: start;
-    margin-top: 76px;
+    margin-top: 50px;
     color: rgba(255, 255, 255, 1);
     letter-spacing: 0.72px;
+    width: 100%;
+    padding: 27px 45px;
+    font: 400 24px Forum, sans-serif;
+}
+
+.companySloganMob {
+    display: none;
+    background-color: rgba(96, 127, 150, 1);
+    align-self: start;
+    margin-top: 50px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.72px;
+    width: 100%;
     padding: 27px 45px;
     font: 400 24px Forum, sans-serif;
 }
@@ -97,7 +126,26 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
+    .companyInfoMob {
+        display: flex;
+    }
+
+    .logoContainerMob {
+        display: flex;
+    }
+
+    .companyBrand {
+        font-size: 46px!important;
+        line-height: 48px!important;
+        text-align: center;
+    }
+
+    .companyInfo {
+        max-width: 100%;
+        margin-top: 0!important;
+    }
+
     .headerImage {
         height: 97%;
         top: -444px;
@@ -123,7 +171,7 @@
     }
 
     .companyType {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 

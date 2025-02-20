@@ -1,5 +1,5 @@
 .contact {
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgba(7, 51, 64, 1);
     display: flex;
     width: 100%;
@@ -75,6 +75,13 @@
     }
 }
 
+@media (max-width: 550px) {
+    .contactIllustration {
+        max-width: 95%!important;
+        margin-top: 0px!important;
+    }
+}
+
 @media (max-width: 991px) {
     .contact {
         max-width: 100%;
@@ -90,6 +97,7 @@
     .contactContent {
         flex-direction: column;
         align-items: center;
+        gap: 0px!important;
     }
 
     .contactIllustration {
